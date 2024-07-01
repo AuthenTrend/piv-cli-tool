@@ -1,0 +1,20 @@
+Source: piv-cli-tool
+Maintainer: Joshua Lin <joshua.lin@authentrend.com>
+Uploaders: Joshua Lin <joshua.lin@authentrend.com>
+Section: utils
+Priority: extra
+Build-Depends: debhelper (>= 9), pkg-config, libpcsclite-dev, libssl-dev, gengetopt, help2man, dh-autoreconf, chrpath, check, cmake, zlib1g-dev
+Standards-Version: 3.0.0
+Homepage: https://github.com/AuthenTrend/piv-cli-tool
+
+Package: piv-cli-tool
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Command line tool for the YubiKey PIV application. The
+ PIV CLI tool is used for interacting with the Personal Identity
+ Verification Card (PIV) application on a ATKey. With it you may
+ generate keys on the device, import keys and certificates, create
+ certificate requests, and other operations. A shared library, a
+ PKCS#11 module and command-line tool are included.
+ .
+ This package contains the command-line tool.
